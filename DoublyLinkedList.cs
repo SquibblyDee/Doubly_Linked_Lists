@@ -119,12 +119,10 @@ public class DoublyLinkedList
     ////We need 3 unqiue pointers including runner from what I remember...
     public void Reverse()
     {
-        Console.WriteLine("WE IN HERE");
         var runner = this.Head;
         List<int> tempList = new List<int>();
         while(runner != null)
         {
-            Console.WriteLine("ITERATING");
             tempList.Add(runner.Value);
             runner = runner.Next;
         }
