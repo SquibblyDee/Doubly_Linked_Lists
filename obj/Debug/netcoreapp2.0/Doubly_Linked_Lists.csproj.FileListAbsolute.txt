@@ -1,0 +1,10 @@
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\bin\Debug\netcoreapp2.0\Doubly_Linked_Lists.deps.json
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\bin\Debug\netcoreapp2.0\Doubly_Linked_Lists.runtimeconfig.json
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\bin\Debug\netcoreapp2.0\Doubly_Linked_Lists.runtimeconfig.dev.json
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\bin\Debug\netcoreapp2.0\Doubly_Linked_Lists.dll
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\bin\Debug\netcoreapp2.0\Doubly_Linked_Lists.pdb
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\obj\Debug\netcoreapp2.0\Doubly_Linked_Lists.csproj.CoreCompileInputs.cache
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\obj\Debug\netcoreapp2.0\Doubly_Linked_Lists.AssemblyInfoInputs.cache
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\obj\Debug\netcoreapp2.0\Doubly_Linked_Lists.AssemblyInfo.cs
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\obj\Debug\netcoreapp2.0\Doubly_Linked_Lists.dll
+C:\Users\S\Google Drive\CSharp\Doubly_Linked_Lists\obj\Debug\netcoreapp2.0\Doubly_Linked_Lists.pdb

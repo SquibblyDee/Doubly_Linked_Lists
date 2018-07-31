@@ -7,6 +7,8 @@ public class DllNode
     public DllNode Prev;
     public DllNode(int val) 
     {
-    // your code here
+        this.Value = val;
+        this.Next = null;
+        this.Prev = null;
     }
 }
