@@ -12,6 +12,10 @@ namespace Doubly_Linked_Lists
             list1.Add(12);
             list1.Add(15);
             list1.Add(20);
+            list1.Add(21);
+            list1.Add(22);
+            list1.Add(23);
+            list1.Add(24);
             list1.Add(25);
             list1.PrintValues();
             Console.WriteLine($"Did we remove a node? {list1.Remove(2)}");
@@ -20,6 +24,9 @@ namespace Doubly_Linked_Lists
             Console.WriteLine($"Did we remove a node? {list1.Remove(25)}");
             Console.WriteLine($"Did we remove a node? {list1.Remove(30)}");
             list1.PrintValues();
+            list1.Reverse();
+            list1.PrintValues();
+
         }
     }
 }

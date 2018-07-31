@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class DoublyLinkedList
 {
@@ -111,5 +112,28 @@ public class DoublyLinkedList
             runner = runner.Next;
         }
         Console.WriteLine("");
+    }
+
+    ////There is a better solution that only iterates through the list once
+    ////If we declare some additional pointers to go along with the runner
+    ////We need 3 unqiue pointers including runner from what I remember...
+    public void Reverse()
+    {
+        Console.WriteLine("WE IN HERE");
+        var runner = this.Head;
+        List<int> tempList = new List<int>();
+        while(runner != null)
+        {
+            Console.WriteLine("ITERATING");
+            tempList.Add(runner.Value);
+            runner = runner.Next;
+        }
+        runner = this.Head;
+        while(runner != null)
+        {
+            runner.Value = tempList[tempList.Count-1];
+            tempList.RemoveAt(tempList.Count-1);
+            runner = runner.Next;
+        }
     }
 }
