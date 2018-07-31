@@ -8,7 +8,6 @@ public class DoublyLinkedList
     {
         this.Head = null;
     }
-
     public void Add(int value)
     {
         DllNode newNode = new DllNode(value);
@@ -58,10 +57,18 @@ public class DoublyLinkedList
                 ////This handles every other possible node position.
                 if(runner.Value == value)
                 {
+                    ////Change all them pointers
+                    ////If... reroute the next node's Prev to the previous Node.
                     if(runner.Next != null)
                     {
                         runner.Next.Prev = runner.Prev;
                     }
+                    ///This is used to reroute our head past the first node if it contains our value.
+                    if(runner.Prev == null)
+                    {
+                        this.Head = runner.Next;
+                    }
+                    ////If... reroute the next node's Prev to the previous Node.
                     if(runner.Prev != null)
                     {
                         runner.Prev.Next = runner.Next;
@@ -70,6 +77,7 @@ public class DoublyLinkedList
                 }
                 runner = runner.Next;
             }
+
             ////This handles if the node we want is on the end of the list
             if(runner.Next == null)
             {
