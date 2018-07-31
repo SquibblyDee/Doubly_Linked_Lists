@@ -104,10 +104,12 @@ public class DoublyLinkedList
     public void PrintValues()
     {
         var runner = this.Head;
+        Console.WriteLine("\nList Contents:");
         while(runner != null)
         {
             Console.WriteLine($"Node Value: {runner.Value}");
             runner = runner.Next;
         }
+        Console.WriteLine("");
     }
 }

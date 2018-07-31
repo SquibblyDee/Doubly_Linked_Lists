@@ -14,14 +14,11 @@ namespace Doubly_Linked_Lists
             list1.Add(20);
             list1.Add(25);
             list1.PrintValues();
-            Console.WriteLine(list1.Remove(2));
-            Console.WriteLine(list1.Remove(7));
-            list1.PrintValues();
-            Console.WriteLine(list1.Remove(20));
-            list1.PrintValues();
-            Console.WriteLine(list1.Remove(25));
-            list1.PrintValues();
-            Console.WriteLine(list1.Remove(30));
+            Console.WriteLine($"Did we remove a node? {list1.Remove(2)}");
+            Console.WriteLine($"Did we remove a node? {list1.Remove(7)}");
+            Console.WriteLine($"Did we remove a node? {list1.Remove(20)}");
+            Console.WriteLine($"Did we remove a node? {list1.Remove(25)}");
+            Console.WriteLine($"Did we remove a node? {list1.Remove(30)}");
             list1.PrintValues();
         }
     }
