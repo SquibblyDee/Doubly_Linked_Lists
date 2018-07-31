@@ -40,6 +40,7 @@ public class DoublyLinkedList
         {
             if(runner.Value == value)
             {
+                ////Only have to repoint the list's head here
                 this.Head = null;
                 return true;
             }
@@ -57,7 +58,14 @@ public class DoublyLinkedList
                 ////This handles every other possible node position.
                 if(runner.Value == value)
                 {
-                    Console.WriteLine("EVERY OTHER POS");
+                    if(runner.Next != null)
+                    {
+                        runner.Next.Prev = runner.Prev;
+                    }
+                    if(runner.Prev != null)
+                    {
+                        runner.Prev.Next = runner.Next;
+                    }
                     return true;
                 }
                 runner = runner.Next;
@@ -67,16 +75,31 @@ public class DoublyLinkedList
             {
                 if(runner.Value == value)
                 {
-                    Console.WriteLine("END POS");
+                    if(runner.Next != null)
+                    {
+                        runner.Next.Prev = runner.Prev;
+                    }
+                    if(runner.Prev != null)
+                    {
+                        runner.Prev.Next = runner.Next;
+                    }
                     return true;
                 }
                 else
                 {
                     return false;
                 }
-                
             }
             return false;
+        }
+    }
+    public void PrintValues()
+    {
+        var runner = this.Head;
+        while(runner != null)
+        {
+            Console.WriteLine($"Node Value: {runner.Value}");
+            runner = runner.Next;
         }
     }
 }
